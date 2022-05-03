@@ -65,7 +65,7 @@ class MealItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         elevation: 4,
-        margin: const EdgeInsets.all(15),
+        margin: const EdgeInsets.all(10),
         child: Column(
           children: <Widget>[
             Stack(
@@ -119,23 +119,26 @@ class MealItem extends StatelessWidget {
                         Icons.schedule_outlined,
                       ),
                       SizedBox(
-                        width: 6,
+                        width: 10,
                       ),
-                      Text('${duration} min'),
+                      Text('${duration} min',
+                          style: TextStyle(fontFamily: 'RobotoCondensed')),
                     ],
                   ),
                   Row(
                     children: <Widget>[
                       Icon(Icons.work_outline_rounded),
-                      SizedBox(width: 6),
-                      Text(complexityText),
+                      SizedBox(width: 10),
+                      Text(complexityText,
+                          style: TextStyle(fontFamily: 'RobotoCondensed')),
                     ],
                   ),
                   Row(
                     children: <Widget>[
                       Icon(Icons.euro_symbol_rounded, size: 22),
-                      SizedBox(width: 6),
-                      Text(affordabilityText),
+                      SizedBox(width: 10),
+                      Text(affordabilityText,
+                          style: TextStyle(fontFamily: 'RobotoCondensed')),
                     ],
                   )
                 ],
